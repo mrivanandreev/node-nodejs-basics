@@ -1,9 +1,9 @@
-import { dirname, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
 import { cp } from 'node:fs/promises';
 import { ERROR_MESSAGE } from '../utils/constants.js';
+import { getDirname } from '../utils/getDirname.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = getDirname(import.meta.url);
 
 const copy = async () => {
   try {

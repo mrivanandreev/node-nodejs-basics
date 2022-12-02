@@ -1,9 +1,9 @@
-import { dirname, resolve, parse } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { resolve, parse } from 'node:path';
 import { readdir } from 'node:fs/promises';
 import { ERROR_MESSAGE } from '../utils/constants.js';
+import { getDirname } from '../utils/getDirname.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = getDirname(import.meta.url);
 
 const list = async () => {
   const dirPath = resolve(__dirname, 'files');
