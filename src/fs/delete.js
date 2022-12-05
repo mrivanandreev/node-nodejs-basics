@@ -15,4 +15,4 @@ const remove = async () => {
   }
 };
 
-remove();
+await remove();

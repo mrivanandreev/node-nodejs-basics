@@ -24,4 +24,4 @@ const rename = async () => {
   }
 };
 
-rename();
+await rename();

@@ -17,4 +17,4 @@ const calculateHash = async () => {
   console.log(createHash('sha256').update(content).digest('hex'));
 };
 
-calculateHash();
+await calculateHash();
